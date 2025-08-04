@@ -1,20 +1,13 @@
-# Byte-compiled / cache files
+.env
 __pycache__/
 *.py[cod]
 *.sqlite3
-
-# Environment and secret files
-.env
 instance/
 certs/
 *.p12
-
-# OS and IDE
 .DS_Store
 .vscode/
 .idea/
-
-# Flask migration or packaging
 *.egg-info/
 dist/
 build/
