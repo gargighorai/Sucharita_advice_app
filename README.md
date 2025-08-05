@@ -1,33 +1,31 @@
-# Doctor Advice System
+# Doctor Advice App
 
-A Flask web application for managing doctor-patient advice, prescriptions, and digital records.
+A Flask-based web app for doctors to manage patients, give advice, and generate prescriptions as PDFs.
 
-## 🔧 Features
+## Features
+- Doctor registration and login
+- Add/edit/delete patient advice
+- Drug management (with JSON import/export)
+- PDF prescription with QR code and digital signature block
+- Deployable on Render.com
 
-- Multi-doctor login/register
-- Add/edit patient advice
-- Prescribe multiple drugs with autocomplete
-- Download PDF with QR code, signature, and dynamic layout
-- Admin panel to manage drugs (add/remove/import/export JSON)
+## Environment Variables
+Create a `.env` file with the following:
 
-## 🚀 Live Demo
+```
+SECRET_KEY=your_secret_key
+DATABASE_URL=sqlite:///local.db
+```
 
-[🌐 Render Deployment Link](#) – _(Add your link here)_
-
-## 🛠️ Tech Stack
-
-- Flask
-- Jinja2
-- Bootstrap 5
-- SQLite / PostgreSQL
-- Flask-Login
-- XHTML2PDF + QR Code
-- Select2 (autocomplete)
-
-## 📦 Setup
-
-1. Clone the repository
+## Virtual Environment Setup (Linux/macOS/Windows)
 
 ```bash
-git clone https://github.com/yourusername/doctor-advice-app.git
-cd doctor-advice-app
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Run App
+```bash
+flask run
+```
